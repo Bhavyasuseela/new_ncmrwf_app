@@ -1,0 +1,72 @@
+name: new_ncmrwf_app
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider:
+  device_preview:
+  http:
+  dio:
+  geolocator: ^12.0.0
+  geocoding:
+  flutter_typeahead:
+  shared_preferences:
+  hive_flutter:
+  hive:
+  flutter_svg:
+  cached_network_image:
+  shimmer:
+  lottie:
+  google_fonts:
+  flutter_animate:
+  intl:
+  cupertino_icons: ^1.0.8
+  home_widget: ^0.6.0
+  onesignal_flutter: ^5.4.1
+  flutter_local_notifications: ^17.2.3
+  permission_handler:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  hive_generator:
+  build_runner:
+  flutter_launcher_icons: ^0.13.1      # ← ADDED
+  flutter_native_splash: ^2.3.9        # ← ADDED
+
+# ── App Launcher Icon ──────────────────────────────────────────
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/app_icon.jpg"
+  min_sdk_android: 21
+  adaptive_icon_background: "#000000"
+  adaptive_icon_foreground: "assets/icon/app_icon.jpg"
+  remove_alpha_ios: true
+
+# ── Native Splash Screen ───────────────────────────────────────
+flutter_native_splash:
+  color: "#ffffff"
+  image: "assets/icon/app_icon.jpg"
+  color_dark: "#ffffff"
+  image_dark: "assets/icon/app_icon.jpg"
+  android_12:
+    image: "assets/icon/app_icon.jpg"
+    icon_background_color: "#ffffff"
+  fullscreen: true
+
+# ── Flutter ────────────────────────────────────────────────────
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/icon/
+    - assets/translations/   # ← ADDED (your app_icon.png lives here)
